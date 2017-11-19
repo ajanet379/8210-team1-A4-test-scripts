@@ -63,6 +63,7 @@ class Blog_ATS(unittest.TestCase):
 
 
        # Test Script 2 - Edit Existing Donor
+       driver.get("http://127.0.0.1:8000/donor/")
        elem = driver.find_element_by_xpath("//*[@id='userTbl']/tbody/tr[2]/td[9]/a").click()
        time.sleep(5)
        name2 = "Jeffrey Smith"
